@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amapia.com - Personal Information Website</title>
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="wow.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+        wow = new WOW(
+        {
+            boxClass:       'wow', //WOW.js animation element class
+            animateClass:   'animated', //animation.css animation class
+            offset:         0, //animation starts at how many distance from the visible area
+            mobile:         true,
+            live:           true
+        })
+        wow.init();
+    </script>
+    <style type="text/css">
+        body
+        {
+            background-color: black;
+        }
+/*        设置header的动画*/
+        @keyframes headerAnimation
+        {
+            from
+            {
+                height: 0px;
+                font-size: 0px;
+                color: transparent;
+                text-shadow: 0px 0px transparent;
+            }
+            to
+            {
+                height: 90px;
+                font-size: 45px;
+                color: mediumpurple;
+                text-shadow: 2px 1.5px plum;
+            }
+        }
+        @keyframes homeAnimation
+        {
+            from
+            {
+                color: transparent;
+            }
+            to
+            {
+                color: white;
+            }
+        }
+/*      设置“回到顶部”按钮的样式*/
+        #backToTop
+        {
+            
+        }
+        
+        /*设置header的样式*/
+        #header
+        {
+            margin-top: -50px;
+            margin:0 auto;
+            width: 100%;
+            opacity: 0.8;
+            background-image: url(pictures/background_3.PNG);
+            background-size: 50%;
+        }
+
+        #title
+        {
+            padding-top: 20px;
+            margin-top: -50px;
+        }
+/*      设置header里面title的文字样式*/
+        #title p
+        {
+            text-align: center;
+            color: mediumpurple;
+            font-size: 45px;
+            letter-spacing: 3px;
+            line-height: 90px;
+            text-shadow: 2px 1.5px plum;
+            animation-name: headerAnimation;
+            animation-duration: 2s;
+        }
+
+/*      设置选择栏的样式*/
+        #content
+        {
+            margin: 0 auto;
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            overflow: hidden;
+        }
+        #content div
+        {
+            width: 20%;
+            list-style: none;
+            float: left;
+        }
+        #content a
+        {
+            font-size: 120%;
+            line-height: 55px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            padding: 20px 20px;
+            text-shadow: 1px 2px plum;
+        }
+        #content a:hover
+        {
+            background-color: #660099;
+            box-shadow: 1px 1px 1px plum;
+        }
+        
+/*      设置自我介绍页面*/
+
+        #home
+        {
+            margin-top: 50px;
+            height: auto;
+            overflow: hidden;
+        }
+        #homeImage
+        {
+            width: 50%;
+            float: left;
+        }
+        #homeText
+        {
+/*
+            background-image: url(pictures/home_frame.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+*/
+            
+            width: 40%;
+            height: inherit;
+            float: left;
+            border-style:inset;
+            border-width: 5px;
+            border-radius: 15px;
+            border-color: plum;
+        }
+        #home p
+        {
+/*            后续学习JavaScript之后要把这段文字做成打印机效果*/
+            font-size: 17px;
+            padding-left: 5%;
+            padding-right: 13%;
+            color: white;
+            line-height: 40px;
+            animation-name: homeAnimation;
+            animation-duration: 5s;
+        }
+/*
+        #professionalSkillsTransformation
+        {
+            width: 100%;
+            height: 270px;
+            background-image: url(pictures/transformation_professional%20skills.jpg);
+            background-size: 100%;
+        }
+*/
+        #professionalSkills
+        {
+            width: 80%;
+            margin: 0 auto;
+        }
+        #professionalSkillsContent
+        {
+            margin-top: 0;
+            padding: 70px;
+            border-left: 5px;
+            border-right: 5px;
+            border-color: #bf94e4;
+            border-style: solid;
+            opacity: 85%;
+        }
+        #professionalSkillsContent p
+        {
+            width: 100%;
+            color: white;
+            font-size: 17px;
+        }
+        #workExperienceTransformation
+        {
+            width: 100%;
+            
+        }
+        #workExperiences
+        {
+            margin: 0 auto;
+            width: 80%;
+        }
+        #workExperienceContent
+        {
+            padding: 5%;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 2px;
+            border-right: 0.7px;
+            border-color: #ff9ac5;
+            border-style: solid;
+            opacity: 60%
+        }
+        #workExperienceContent p
+        {
+            width: 100%;
+            color: white;
+            font-size: 17px;
+        }
+        #certificatesTransformation
+        {
+            margin: 0 auto;
+            width: 70%;
+        }
+        #certificates
+        {
+            
+            margin: 0 auto;
+            width: 100%;
+        }
+        #certificatesContent p
+        {
+            padding-left: 10%;
+            padding-right: 10%;
+            color: white;
+        }
+        #interestsTransformation
+        {
+            margin: 0 auto;
+            width: 70%;
+        }
+        #interests
+        {
+            width: 100%;
+            margin: 0 auto;
+        }
+        #interestsContent
+        {
+            margin: 0 auto;
+            width: 80%;
+        }
+        #interestsContent p
+        {
+            padding-left: 10%;
+            padding-right: 10%;
+            color: white;
+        }
+        .bold
+        {
+            font-size: 21px;
+            font-weight: bolder;
+            text-shadow: 1px 1px plum;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="title">
+            <p>
+            Chen Jiang Personal Website
+            </p>
+        </div>
+        <div id="content">
+            <div>
+                <!--这行需要定位到这个page的某一个部分-->
+                <a href = "movie.html">Home Page</a>
+            </div>
+            <div>
+                <!--这行需要定位到这个page的某一个部分-->
+                <a href="#professionalSkillsTransformation">Professional Skills</a>
+            </div>
+            <div>
+                <!--这行需要定位到这个page的某一个部分-->
+                <a href="#workExperienceTransformation">Work Experiences</a>
+            </div>
+            <div>
+                <!--这行需要定位到这个page的某一个部分-->
+                <a href="#certificatesTransformation">Certificates</a>
+            </div>
+            <div>
+                <!--这行需要定位到这个page的某一个部分-->
+                <a href="#interestsTransformation">Interests</a>
+            </div>
+        </div>
+    </div>
+    <div id="home">
+        <div id="homeImage">
+            <img src="pictures/home_headshot.jpg" alt="home page background" width="100%">
+        </div>
+        <div id="homeText">
+        <p>
+            Hi! My name is Chen Jiang, you can also call me Nancy! I am from China, Qingdao. Currently I am studying in University of Toronto, specialist in Computer Science, mainly focus on Artificial Intelligence and Computer Vision and major in Statistics. 
+        </p>
+        <p>
+            I would love to share my stories and experiences with you guys! Don't leave the page when you see me, there gonna be a lot of exiting information and stories about me if you would just spend a little bit more time viewing the page!
+        </p>
+        <p>
+            As you can see from the left, that is my picture lol~ I took this picture two years ago and now I haven't changed a little!
+        </p>
+        <p>
+            -Chen Jiang (Nancy)
+        </p>
+        </div>
+    </div>
+    <div class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="10" data-wow-iteration="1" id="professionalSkillsTransformation">
+        <img src="pictures/transformation_professional%20skills.jpg" alt="transformation picture to professional skills" width="100%">
+    </div>
+    <div class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="1" id="professionalSkills">
+        <div>
+            <img src="pictures/professional_skills_tvtop.jpg" alt="" width="100%">
+        </div>
+        <div id="professionalSkillsContent">
+            <div>
+            <p class="bold">
+                Hard Skills(Technology Skills):
+            </p>
+            <p>
+                Programming Languages: JAVA, Python, C++, C, HTML, CSS, JavaScript, assembly, R, Unix... more comming soon
+            </p>
+            <p>
+                Programming Skills: Object-Oriented Programming, Software development, Front-end and Back-end development, Data modelling, Problem Solving, Complex Algorithm
+            </p>
+            <p class="bold">Past Projects Experiences:</p>
+            <p>
+                A personal website which contains information, professional skills, work expereinces, certificates and interest of my own (which is this website).
+            </p>
+            <p>
+                A blog application built by Java which has the functions to post content, comment on posts, like posts, add friends, chat with friends and view post topics
+            </p>
+            <p>
+                Integration of Bamboo HR and Google Contact using API
+            </p>
+            <p>
+                A small application that analyses and predict the criminal rate of the next few years.
+            </p>
+            <p class="bold">
+                Soft Skills(non-Technology Skills):
+            </p>
+            <p>
+                Teamwork: I worked on a blog system Java project in a team and mainly focused on the topics' design, clean architecture, and algorithms of the system. I know how to work in a team and how to communicate on the integration part of different entities.
+            </p>
+            <p>
+                Communication: I builded a criminal rate prediction statistical model with other three people. I mainly focused on the statistical modelling generation and prediction using distribution and bootstrap methods. My part requires the data from the criminal data website thus requires a documentation conversion from a python project, which is taken charged of by another student, we exchange our progress and accomodate to each other's situation everyday and we collaborated well. 
+            </p>
+            <p>
+                Leadership: I am currently the president of event department of University of Toronto Application Development Apartment Innovation Fair. I am in charge in everything related to event and I plan, organize and accomodate for any events such as Tech talks, First-year university guide, group activities and so on. I take lead of my department members and give them instruction on what to do, take advise from them, and help them out when they encounter difficulties.
+            </p>
+            <p>
+                Management: In terms of management, I am good at both time-management and team-management. For time-management, I have taken 6 courses one year and besides that I need to find a summer internship in my spare time. I have a time-table for everyday plan and I would modify the plan based on different situations. Turns out, all of my class works are good, and I found a proper job for my summer intern. As for team management, I attended MG20 held in our high school, I was the minister of education of Mexico. I managed our team to negotiate with other countries and told them about our rules and disciplines, at the end Mexico was selected to be the best team in negotiation and Mexico establised a global educational organization with all of the 20 members of G20 joined.
+            </p>
+            <p>
+                Problem Solving: I have the ability to find answers by myself under most circumstances. For example, when I encountered difficulties during my Java project, I asked one of my friend who is a software developer to send me a sample Java project, and I looked through the project and understood the principle behind the scene, then I knew what to do when I encounter the same problem again. Also, when some questions are too difficult for me to solve, I would search for the answer on the website, and when I get some level of understanding and when I have my own idea of the analysis of the problem, I would ask my professors or my friends who knows the answer and discuss with them about my own understanding.
+            </p>
+            <p>
+                Creativity: The creativity can be proven by the establishment of this website. I think this is a great way to show what I can do and personalize my own personal website to provide more fun facts about myself without restrictions as I can make my own website to any style I want.
+            </p>
+            <p>
+                Kindness: I enjoy helping people with disabilities or people in poverty. I have been to Thailand to assist those student in poverty voluntarily. I taught them English and I saw a lot of students cannot afford textbook or cannot afford tuitions. Their study environment is very tuff. I baught them textbooks, schoolbags and snacks. I know my contribution is subtle to change their study environment, but I will continue to help poor people and change their destinies.
+            </p>
+            </div>
+        </div>
+        <div>
+            <img src="pictures/professional_skills_tvbottom.jpg" alt="" width="100%">
+        </div>
+    </div>
+<!--    work experiences transformation-->
+    <div class="wow bounceIn" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="10" data-wow-iteration="1" id ="workExperienceTransformation">
+        <img src="pictures/transformation_work_experiences.jpg" alt="" width="100%">
+    </div>
+    <div id="workExperiences" class="wow bounceIn" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="10" data-wow-iteration="1" id ="workExperienceTransformation">
+        <div><img src="pictures/work_experience_booktop.jpg" alt="" width="100%"></div>
+        <div id="workExperienceContent" >
+            <p class="bold">Big Bang - 2022.06-Current - Montreal, QC - IT Support Specialist:</p>
+            <p>Help to fix computer related problem, including software and hardware issues, setup laptops for new hires, check and update devices, help to test software, and work on internal projects.</p>
+            <p class="bold">UTADA - 2022.09-Current - Toronto, ON - President of Event Department of UTADA</p>
+            <p>The full name of UTADA is University of Toronto Application Development Association Innovation Fair. I organize and manage events held in the club, recruit new members and namage interviews of new joins, lead the members in the event department to organize and prepare events together.</p>
+            <p class="bold">ASIP - 2022.09-Current - Toronto, ON - Participant</p>
+            <p>ASIP is University of Toronto Art and Science Internship Program, and currently I am enrolled in it to find internships through out my University.</p>
+            <p class="bold">Qingdao Makesi Software Co.LTD - 2021.07-2021.08 - Qingdao, China -Software Testing Internship</p>
+            <p>Conducting spesific analysis and functional test for newly developed functional modules according to the requirements of the company. The job is mainly about black box testing, bug recording and error reporting.</p>
+            <p class="bold">Qingdao Wanma Education Technology CO. LTD - 2020.07-2020.08 - Qingdao, China - Course Consultant Assistant Internship</p>
+            <p>Make phone calls, course inquires, course introductions, training directions, develop training plans and objectives for those who are interested in software programing. Maintained excellent communication with students, parents, staff and school personnel. Oversaw delivery of engaging, interactive educational experiences and curriculum.</p>
+        </div>
+        <div><img src="pictures/work_experience_bookbottom.jpg" alt="" width="100%"></div>
+    </div>
+    <div id="certificatesTransformation" class="wow flipInY" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="10" data-wow-iteration="1">
+        <img src="pictures/certificate_transformation.jpg" alt="" width="100%">
+    </div>
+    <div id="certificates" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="10" data-wow-iteration="1">
+        <div><img src="pictures/certificate_startop.jpg" alt="" width="100%"></div>
+        <div id="certificatesContent">
+            <p>2021-2022 Co-curricular record: RSG Leader pf Recognized Study Groups: Faculty of Art and Science</p>
+            <p>2021-2022 Dean's List Scholar awarded by University of Toronto for my outstanding GPA in terms of my course work</p>
+            <p>2019 Verified certificate of achievement of MIT x 6.00.1 x : Introduction to Computer Science and Programming Using Python | EDX</p>
+            <p>2020 Verified certificate of achievement of MIT x 6.00.2 x : Introduction to Computational Thinking and Data Science | EDX</p>
+            <p>2020 Canadian Senior Mathematics Contest World Top 25%</p>
+            <p>2019 Youth Leadership 2019 Module G20 Beijing Summit Exceptional Delegation Certificate Awarded</p>
+            <p>2020 The Bronze Standard of The Duke of Edinburgh's International Award</p>
+            <p>2021 Top four debating teams in Harvard Global Debate Contest, and "The best debater" award</p>
+            <p>2019 Certificate of achievement of Thailand volunteering teaching project</p>
+        </div>
+        <div><img src="pictures/certificate_starbottom.jpg" alt="" width="100%"></div>
+    </div>
+    <div id="interestsTransformation" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="10" data-wow-iteration="1">
+        <img src="pictures/interest_transformation.jpg" alt="" width="100%">
+    </div>
+    <div id="interests" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="10" data-wow-iteration="1">
+        <div><img src="pictures/interest_musictop.jpg" alt="" width="100%"></div>
+        <div id="interestsContent">
+            <p>计划讲述一下我喜欢的电影，放一个视频链接在这个地方</p>
+            <p>计划讲述一下我喜欢的乐器，录个视频放视频链接</p>
+            <p>计划讲述一下我喜欢的编程，录个视频放视频链接</p>
+        </div>
+        <div><img src="pictures/interest_musicbottom.jpg" alt="" width="100%"></div>
+    </div>
+<!--设置回到顶部的按钮！！！-->
+    <div id="button">
+        <a id="backToTop" href="#header">
+            <span>⬆️</span>
+        </a>
+    </div>
+<!--
+    <script>
+        $(function()
+         {
+            for(var i=0; i<100; i++)
+            {
+                $("#button").append("<p>xxxxxxx<br></p>")
+            }
+        })
+    </script>
+-->
+    <script>
+        $(function()
+         {
+            $(window).scroll(function(){
+                var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //Get the height after scrolling
+                if(scrollt > 200) //判断滚动后高度超过200px就显示back to top
+                {
+                    $("#button").fadeIn(400); //淡出
+                }
+                else
+                {
+                    $("button").stop.fadeOut(400); //如果返回或者没有吵过，就淡出
+                }
+            })
+            $("button").click(function(){
+                $("html,body").animate({scrollTop:"0px"},200);
+            })
+        })
+    </script>
+</body>
+</html>
+
+
