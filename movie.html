@@ -170,6 +170,7 @@
         {
             width: 80%;
             margin: 0 auto;
+            overflow: hidden;
         }
         #professionalSkillsContent
         {
@@ -180,12 +181,14 @@
             border-color: #bf94e4;
             border-style: solid;
             opacity: 85%;
+            overflow: hidden;
         }
         #professionalSkillsContent p
         {
             width: 100%;
             color: white;
-            font-size: 17px;
+            font-size: 150%;
+            text-align: center;
         }
         #workExperienceTransformation
         {
@@ -252,11 +255,48 @@
             padding-right: 10%;
             color: white;
         }
+        .professionalSkillsTV
+        {
+            margin: 0 auto;
+            width: 100%;
+            height: 20%;
+            overflow: hidden;
+        }
+        .professionalSkillsTVItems
+        {
+            height: 90px;
+            width: 17%;
+            margin: 1%;
+            list-style: none;
+            float: left;
+            border-color: #bf94e4;
+            border-style: solid;
+            transition: 1s;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+        .professionalSkillsTVItems:hover
+        {
+            background-color: lightpink;
+        }
+        .professionalSkillsTVProjects
+        {
+            width: 17%;
+            margin: 2%;
+            list-style: none;
+            float: left;
+            transition: 1s;
+        }
+        .professionalSkillsTVProjects:hover
+        {
+            width: 20%;
+        }
         .bold
         {
             font-size: 21px;
             font-weight: bolder;
             text-shadow: 1px 1px plum;
+            background-color: rebeccapurple;
         }
     </style>
 </head>
@@ -317,53 +357,153 @@
             <img src="pictures/professional_skills_tvtop.jpg" alt="" width="100%">
         </div>
         <div id="professionalSkillsContent">
-            <div>
             <p class="bold">
                 Hard Skills(Technology Skills):
             </p>
-            <p>
-                Programming Languages: JAVA, Python, C++, C, HTML, CSS, JavaScript, assembly, R, Unix... more comming soon
-            </p>
-            <p>
-                Programming Skills: Object-Oriented Programming, Software development, Front-end and Back-end development, Data modelling, Problem Solving, Complex Algorithm
-            </p>
+            <div class="professionalSkillsTV">
+                <div class="professionalSkillsTVItems">
+                    <p>Java</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Python</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>C++/C</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Front-End</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Back-End</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Databse</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>HTML</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>CSS</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>JavaScript</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Ajax</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>JQuery</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Axios</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Vue</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Element UI</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Spring</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>SpringMVC</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>SpringBoot</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>MyBatis</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>MyBatis-Plus</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>MySQL</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Oracle</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Git</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>GitHub</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>JUnit</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Maven</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>SOLID Principle</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>software design pattern</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>clean architecture</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Unix</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>R</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Redis</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>EhCache</p>
+                </div>
+            </div>
             <p class="bold">Past Projects Experiences:</p>
-            <p>
-                A personal website which contains information, professional skills, work expereinces, certificates and interest of my own (which is this website).
-            </p>
-            <p>
-                A blog application built by Java which has the functions to post content, comment on posts, like posts, add friends, chat with friends and view post topics
-            </p>
-            <p>
-                Integration of Bamboo HR and Google Contact using API
-            </p>
-            <p>
-                A small application that analyses and predict the criminal rate of the next few years.
-            </p>
+            <div class="professionalSkillsTV">
+                <div class="professionalSkillsTVProjects">
+                    <a href="https://chenjiang03.github.io/movie#header">
+                        <img src="pictures/professional_skills/Amapia.jpg" alt="" width="100%">
+                    </a>
+                </div>
+                <div class="professionalSkillsTVProjects">
+                    <a href="https://github.com/Anesthez/CSC-207-Group-Project-Group86">
+                        <img src="pictures/professional_skills/UTMet.jpg" alt="" width="100%">
+                    </a>
+                </div>
+                <div class="professionalSkillsTVProjects">
+                    <img src="pictures/professional_skills/Integration.jpg" alt="" width="100%">
+                </div>
+                <div class="professionalSkillsTVProjects">
+                    <a href="https://github.com/ChenJiang03/Criminal-Rate-Statistical-Modelling">
+                        <img src="pictures/professional_skills/Modeling.jpg" alt="" width="100%">
+                    </a>
+                </div>
+            </div>
             <p class="bold">
                 Soft Skills(non-Technology Skills):
             </p>
-            <p>
-                Teamwork: I worked on a blog system Java project in a team and mainly focused on the topics' design, clean architecture, and algorithms of the system. I know how to work in a team and how to communicate on the integration part of different entities.
-            </p>
-            <p>
-                Communication: I builded a criminal rate prediction statistical model with other three people. I mainly focused on the statistical modelling generation and prediction using distribution and bootstrap methods. My part requires the data from the criminal data website thus requires a documentation conversion from a python project, which is taken charged of by another student, we exchange our progress and accomodate to each other's situation everyday and we collaborated well. 
-            </p>
-            <p>
-                Leadership: I am currently the president of event department of University of Toronto Application Development Apartment Innovation Fair. I am in charge in everything related to event and I plan, organize and accomodate for any events such as Tech talks, First-year university guide, group activities and so on. I take lead of my department members and give them instruction on what to do, take advise from them, and help them out when they encounter difficulties.
-            </p>
-            <p>
-                Management: In terms of management, I am good at both time-management and team-management. For time-management, I have taken 6 courses one year and besides that I need to find a summer internship in my spare time. I have a time-table for everyday plan and I would modify the plan based on different situations. Turns out, all of my class works are good, and I found a proper job for my summer intern. As for team management, I attended MG20 held in our high school, I was the minister of education of Mexico. I managed our team to negotiate with other countries and told them about our rules and disciplines, at the end Mexico was selected to be the best team in negotiation and Mexico establised a global educational organization with all of the 20 members of G20 joined.
-            </p>
-            <p>
-                Problem Solving: I have the ability to find answers by myself under most circumstances. For example, when I encountered difficulties during my Java project, I asked one of my friend who is a software developer to send me a sample Java project, and I looked through the project and understood the principle behind the scene, then I knew what to do when I encounter the same problem again. Also, when some questions are too difficult for me to solve, I would search for the answer on the website, and when I get some level of understanding and when I have my own idea of the analysis of the problem, I would ask my professors or my friends who knows the answer and discuss with them about my own understanding.
-            </p>
-            <p>
-                Creativity: The creativity can be proven by the establishment of this website. I think this is a great way to show what I can do and personalize my own personal website to provide more fun facts about myself without restrictions as I can make my own website to any style I want.
-            </p>
-            <p>
-                Kindness: I enjoy helping people with disabilities or people in poverty. I have been to Thailand to assist those student in poverty voluntarily. I taught them English and I saw a lot of students cannot afford textbook or cannot afford tuitions. Their study environment is very tuff. I baught them textbooks, schoolbags and snacks. I know my contribution is subtle to change their study environment, but I will continue to help poor people and change their destinies.
-            </p>
+            <div class="professionalSkillsTV">
+                <div class="professionalSkillsTVItems">
+                    <p>Team Work</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Communication</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Leadership</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Management</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Problem Solving</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Creativity</p>
+                </div>
+                <div class="professionalSkillsTVItems">
+                    <p>Kindness</p>
+                </div>
             </div>
         </div>
         <div>
